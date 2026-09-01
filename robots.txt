@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Replace the line below with your real site URL once the repo is published,
+# e.g. https://cm4-auburn.github.io/remmmedies-reu/sitemap.xml
+Sitemap: https://REPLACE-WITH-YOUR-SITE-URL/sitemap.xml
