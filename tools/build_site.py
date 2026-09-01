@@ -104,7 +104,7 @@ HOME = """
       <h1>Model matter,<br>atom to bulk.</h1>
       <p class="tag">A paid 10-week research experience in computational modeling of materials and molecules — for undergraduates who want to do this and don't have the chance at home.</p>
       <p class="factline">
-        <span class="ph">[[PROGRAM DATES]]</span>
+        <span>May 17 &ndash; July 31, 2027</span>
         <span>$6,365 stipend</span>
         <span>Housing + meals + travel</span>
         <span>No programming experience required</span>
@@ -114,14 +114,11 @@ HOME = """
         <a class="btn btn-ghost" href="research.html">Explore research projects</a>
       </p>
     </div>
-    <div class="ladder">
-      <p class="cap">What &ldquo;multiscale&rdquo; means here</p>
-      <div class="rung"><span class="u">10<sup>&minus;10</sup> m</span><span class="m">Electrons and bonds<em>DFT · Hartree&ndash;Fock</em></span></div>
-      <div class="rung"><span class="u">10<sup>&minus;9</sup> m</span><span class="m">Atoms in motion<em>Molecular dynamics · Monte Carlo</em></span></div>
-      <div class="rung"><span class="u">10<sup>&minus;8</sup> m</span><span class="m">Proteins and assemblies<em>Coarse-grained models</em></span></div>
-      <div class="rung"><span class="u">10<sup>&minus;6</sup> m</span><span class="m">Grains, particles, plasmas<em>Statistical analysis</em></span></div>
-      <div class="rung"><span class="u">10<sup>&minus;3</sup> m</span><span class="m">Bulk response<em>Finite element analysis</em></span></div>
-    </div>
+    <figure class="heroart">
+      <img src="assets/img/hero-lattice.jpg" width="1600" height="1200"
+           alt="A rendered two-dimensional honeycomb lattice seen in perspective, with a circular nanopore at its centre whose rim atoms are chemically passivated.">
+      <figcaption>A functionalized nanopore in a 2D material — one of the structures students model here.</figcaption>
+    </figure>
   </div>
 </div>
 
@@ -143,7 +140,7 @@ HOME = """
 <section class="band tint">
   <div class="wrap">
     <div class="grid g4">
-      <div class="stat"><span class="n">10</span><span class="l">weeks on the Auburn campus, <span class="ph">[[PROGRAM DATES]]</span></span></div>
+      <div class="stat"><span class="n">10</span><span class="l">weeks on the Auburn campus, May 17 &ndash; July 31, 2027</span></div>
       <div class="stat"><span class="n">$6,365</span><span class="l">stipend, plus housing, meals, and travel reimbursement</span></div>
       <div class="stat"><span class="n">10</span><span class="l">students in the cohort, most from outside Auburn</span></div>
       <div class="stat"><span class="n">8</span><span class="l">research projects across five departments</span></div>
@@ -178,7 +175,7 @@ HOME = """
 
 <section class="ctaband">
   <div class="wrap stack">
-    <h2>Applications for Summer <span class="ph">[[YEAR]]</span></h2>
+    <h2>Applications for Summer 2027</h2>
     <p>Open <span class="ph">[[APPLICATION OPENS]]</span> · Close <span class="ph">[[APPLICATION DEADLINE]]</span> · Apply through NSF ETAP</p>
     <p><a class="btn btn-primary" href="apply.html">Start your application</a></p>
   </div>
@@ -406,17 +403,14 @@ def mentors_page():
     <div class="grid g3">
       <div class="lead-card">
         <p class="nm">Dr. Marcelo A. Kuroda</p>
-        <p class="role">Principal Investigator</p>
         <p class="bi">Associate Professor of Physics. Theoretical and computational condensed matter and materials physics, from large-scale first-principles calculations to analytical models. Most Outstanding Professor, Society of Physics Students (2015).</p>
       </div>
       <div class="lead-card">
         <p class="nm">Dr. Konstantin Klyukin</p>
-        <p class="role">Co-Principal Investigator</p>
         <p class="bi">Assistant Professor of Materials Engineering. Connects ab initio simulation with machine learning to understand atomic-scale processes at materials interfaces. AU Outstanding Faculty Member 2024 for excellence in undergraduate teaching.</p>
       </div>
       <div class="lead-card">
         <p class="nm">Dr. Evangelos Miliordos</p>
-        <p class="role">Senior Investigator</p>
         <p class="bi">J. E. Land Associate Professor, Chemistry and Biochemistry. Quantum chemical calculations on transition metal compounds and systems with solvated electrons.</p>
       </div>
     </div>
@@ -438,13 +432,6 @@ def mentors_page():
   </div>
 </section>
 
-<section class="band tint">
-  <div class="wrap stack narrow">
-    <p class="eyebrow">Near-peer mentoring</p>
-    <h2 class="sec">Graduate mentors</h2>
-    <p>Every REU student also works with a graduate student in their mentor's research group. Near-peer mentors give step-by-step tutorials, troubleshoot problems as they come up, and provide continuous feedback — often in ways that are more approachable than working with faculty alone.</p>
-  </div>
-</section>
 """
 
 
@@ -457,7 +444,7 @@ APPLY = """
       <div><span class="k">Applications open</span><span class="v ph">[[APPLICATION OPENS]]</span></div>
       <div><span class="k">Application deadline</span><span class="v ph">[[APPLICATION DEADLINE]]</span></div>
       <div><span class="k">Decisions announced</span><span class="v ph">[[DECISION DATE]]</span></div>
-      <div><span class="k">Program dates</span><span class="v ph">[[PROGRAM DATES]]</span></div>
+      <div><span class="k">Program dates</span><span class="v">May 17 &ndash; July 31, 2027</span></div>
     </div>
     <p><a class="btn btn-primary" href="[[ETAP LINK]]">Apply on NSF ETAP</a></p>
   </div>

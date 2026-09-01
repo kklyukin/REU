@@ -1,5 +1,7 @@
 # Placeholders to fill in before you advertise the site
 
+> Program dates (May 17 – July 31, 2027) and the cohort year are already filled in.
+
 Every unfinished value in the site is written as `[[TOKEN]]` and rendered in an
 orange dashed box, so it is impossible to miss on the page. Find them all with:
 
@@ -12,8 +14,6 @@ site, in `tools/build_site.py` — see the note at the bottom).
 
 | Token | Appears in | What to put there |
 |---|---|---|
-| `[[PROGRAM DATES]]` | `index.html`, `apply.html` | e.g. `May 24 – July 31, 2027` |
-| `[[YEAR]]` | `index.html` | The cohort year, e.g. `2027` |
 | `[[APPLICATION OPENS]]` | `index.html`, `apply.html` | e.g. `November 1, 2026` |
 | `[[APPLICATION DEADLINE]]` | `index.html`, `apply.html` | e.g. `February 15, 2027` |
 | `[[DECISION DATE]]` | `apply.html` | e.g. `Mid-March 2027` |

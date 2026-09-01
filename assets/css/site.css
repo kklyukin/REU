@@ -178,6 +178,18 @@ nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--orang
 .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
 .btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff}
 
+/* ---------- hero artwork ---------- */
+.heroart{margin:0;display:flex;flex-direction:column;gap:10px}
+.heroart img{
+  display:block;width:100%;height:auto;border-radius:3px;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow:0 18px 40px -22px rgba(0,0,0,.75);
+}
+.heroart figcaption{
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.5;
+  color:#8FAECD;
+}
+
 /* ---------- scale ladder ---------- */
 .ladder{
   border:1px solid rgba(255,255,255,.16);
