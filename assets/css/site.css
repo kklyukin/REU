@@ -83,6 +83,9 @@ a:hover{text-decoration-thickness:2px}
 }
 .skip:focus{left:0}
 
+/* Superscripts (CM4) sit inline without disturbing line height. */
+sup{font-size:.72em;line-height:0;vertical-align:.42em}
+
 /* ---------- layout helpers ---------- */
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .stack{display:flex;flex-direction:column;gap:18px}
@@ -236,6 +239,36 @@ nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--orang
 .proj .who{font-size:13px;color:var(--ink-2)}
 .proj .meth{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ink-3);line-height:1.5}
 .proj .d{font-size:14px;color:var(--ink-2)}
+
+/* Uniform card headers: reserve two lines for the title, the mentor list and
+   the methods line, so every collapsed card is the same height and the
+   "Project details" toggles line up across the grid. */
+.projgrid .proj h3{min-height:2.5em}
+.projgrid .proj .who{min-height:3.2em}
+.projgrid .proj .meth{min-height:3em}
+.projgrid .proj > details{margin-top:auto}
+
+/* Project cards size to their own content, so expanding one does not stretch
+   its neighbour in the same grid row. */
+.projgrid{align-items:start}
+
+/* Collapsible project descriptions — native <details>, no JavaScript. */
+details.projdet summary{
+  cursor:pointer;list-style:none;
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--orange);
+  padding:2px 0;
+}
+details.projdet summary::-webkit-details-marker{display:none}
+details.projdet summary::after{
+  content:"+";font-size:15px;line-height:1;font-weight:400;
+  position:relative;top:-1px;
+}
+details.projdet[open] summary::after{content:"\2013"}
+details.projdet summary:hover{text-decoration:underline;text-underline-offset:3px}
+details.projdet[open] summary{margin-bottom:12px}
+details.projdet .d + .d{margin-top:10px}
 
 /* ---------- people ---------- */
 .peoplecol{display:flex;flex-direction:column}
