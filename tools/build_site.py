@@ -141,7 +141,7 @@ HOME = """
       <div class="stat"><span class="n">10</span><span class="l">weeks on the Auburn campus, May 17 &ndash; July 23, 2027</span></div>
       <div class="stat"><span class="n">$6,365</span><span class="l">stipend, plus on-campus housing and travel reimbursement</span></div>
       <div class="stat"><span class="n">10</span><span class="l">students in the cohort</span></div>
-      <div class="stat"><span class="n">2</span><span class="l">mentors per participant &mdash; one faculty, one graduate student</span></div>
+      <div class="stat"><span class="n">2</span><span class="l">research groups you work with &mdash; every project pairs mentors from two departments</span></div>
     </div>
   </div>
 </section>
