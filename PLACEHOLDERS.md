@@ -1,42 +1,27 @@
-# Placeholders to fill in before you advertise the site
+# Placeholders still to fill in
 
-> Program dates (May 17 – July 31, 2027) and the cohort year are already filled in.
+Already filled: program dates (May 17 – July 31, 2027), cohort year, application
+opens/deadline, decision date, graduation cutoff, NSF award number (2548283),
+project coordinator, and the pre-program Q&A date.
 
-Every unfinished value in the site is written as `[[TOKEN]]` and rendered in an
-orange dashed box, so it is impossible to miss on the page. Find them all with:
+Two remain. Find them with:
 
 ```bash
 grep -rn --include='*.html' -E '\[\[[A-Z ]+\]\]' .
 ```
 
-Fill them in by editing the `.html` files directly (or, if you regenerate the
-site, in `tools/build_site.py` — see the note at the bottom).
-
 | Token | Appears in | What to put there |
 |---|---|---|
-| `[[APPLICATION OPENS]]` | `index.html`, `apply.html` | e.g. `November 1, 2026` |
-| `[[APPLICATION DEADLINE]]` | `index.html`, `apply.html` | e.g. `February 15, 2027` |
-| `[[DECISION DATE]]` | `apply.html` | e.g. `Mid-March 2027` |
-| `[[GRAD YEAR CUTOFF]]` | `apply.html` | e.g. `You must not receive your bachelor's degree before August 2027.` |
-| `[[ETAP LINK]]` | `apply.html` | Your program's ETAP opportunity URL. **This one is an `href`** — replace the whole attribute value, not just the visible text. |
-| `[[WEBINAR DATES]]` | `apply.html`, `contact.html` | Dates and Zoom links for the virtual Q&A sessions |
-| `[[PROGRAM EMAIL]]` | every page (footer) + `contact.html`, `faq.html` | A shared alias such as `remmmedies@auburn.edu` — not a personal address |
-| `[[COORDINATOR NAME]]` | `contact.html` | Project coordinator's name |
-| `[[AWARD NUMBER]]` | every page (footer) | NSF award number, once issued |
+| `[[ETAP LINK]]` | `apply.html` | The program's ETAP opportunity URL. **This one is an `href`** — replace the whole attribute value, not just the visible text. |
+| `[[PROGRAM EMAIL]]` | every page (footer) + `contact.html`, `faq.html` | A shared alias such as `remmmedies@auburn.edu`. Use a shared mailbox, not a personal address — this outlives any one person's role. |
 
-Two more values live outside the HTML:
-
-- `sitemap.xml` and `robots.txt` both contain `REPLACE-WITH-YOUR-SITE-URL`.
-  Set these to your published URL once you know it.
-- `CNAME` (create it only if you use a custom domain) should contain the bare
-  hostname, e.g. `reu.cm4.auburn.edu`.
+Both render in an orange dashed box on the page, so they cannot go live unnoticed.
 
 ## Making the check a hard failure
 
-`.github/workflows/check-placeholders.yml` scans every push and reports leftover
-tokens. It currently warns rather than failing. Once the site is live and all
-tokens are filled in, change `exit 0` to `exit 1` in that file so a placeholder
-can never reach the public site again.
+`.github/workflows/check-placeholders.yml` (not yet uploaded to GitHub) scans
+every push for leftover tokens. It currently warns rather than failing. Once the
+last two are filled, change `exit 0` to `exit 1` in that file.
 
 ## If you regenerate with the build script
 
@@ -48,5 +33,3 @@ script, **your hand edits are overwritten.** Pick one workflow:
   the script again, or
 - **Edit `tools/build_site.py`** and re-run it, so the shared header, nav and
   footer stay identical across pages.
-
-The second is better if you expect to add pages or change navigation.
