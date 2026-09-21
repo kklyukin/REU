@@ -21,6 +21,9 @@
   --hero-bg:#03244D;
   --link:#0C3A73;
   --maxw:1080px;
+  /* one shared measure for every column of running text, so the text
+     column is the same width on every page regardless of type size */
+  --measure:34rem;
 }
 
 @media (prefers-color-scheme: dark){
@@ -89,7 +92,7 @@ sup{font-size:.72em;line-height:0;vertical-align:.42em}
 /* ---------- layout helpers ---------- */
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .stack{display:flex;flex-direction:column;gap:18px}
-.narrow{max-width:64ch}
+.narrow{max-width:var(--measure)}
 .grid{display:grid;gap:18px}
 .g2{grid-template-columns:1fr}
 .g3{grid-template-columns:1fr}
@@ -109,8 +112,25 @@ sup{font-size:.72em;line-height:0;vertical-align:.42em}
 }
 h1.sec,h2.sec{font-size:clamp(24px,3.2vw,32px);letter-spacing:-.015em}
 h3.sub{font-size:19px;letter-spacing:-.01em}
-.lede{font-size:18px;color:var(--ink-2);max-width:62ch}
+.lede{font-size:18px;color:var(--ink-2);max-width:var(--measure)}
 .fineprint{font-size:13px;color:var(--ink-3)}
+
+/* Running prose is justified with hyphenation on, so every text block has the
+   same flush right edge and blocks read as the same size page to page.
+   Headings, labels, nav, tables and mono text stay ragged. */
+.lede,
+.narrow p,
+.point p,
+.proj .d,
+.callout p,
+details.faq p,
+details.projdet p,
+footer.site p{
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+  -webkit-hyphens:auto;
+}
 
 /* ---------- masthead ---------- */
 .mast{
@@ -327,7 +347,7 @@ td.wk{font-family:"IBM Plex Mono",monospace;color:var(--ink-3);font-variant-nume
 ul.clean{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:7px;font-size:15px;color:var(--ink-2)}
 ul.clean li::marker{color:var(--orange)}
 
-ul.tick{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:15px;max-width:66ch}
+ul.tick{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:15px;max-width:var(--measure)}
 ul.tick li{position:relative;padding-left:28px;color:var(--ink-2)}
 ul.tick li::before{
   content:"\2192";position:absolute;left:0;top:0;
@@ -343,7 +363,7 @@ ul.tick li::before{
 .addr{font-size:14.5px;color:var(--ink-2);margin-top:6px}
 
 /* ---------- FAQ ---------- */
-.faqlist{max-width:74ch}
+.faqlist{max-width:var(--measure)}
 details.faq{border-bottom:1px solid var(--rule)}
 details.faq summary{
   cursor:pointer;padding:14px 0;font-weight:600;font-size:15.5px;list-style:none;
@@ -355,7 +375,7 @@ details.faq summary::after{
   font-weight:400;font-size:17px;
 }
 details.faq[open] summary::after{content:"\2013"}
-details.faq p{padding:0 0 16px;font-size:14.5px;color:var(--ink-2);max-width:70ch}
+details.faq p{padding:0 0 16px;font-size:14.5px;color:var(--ink-2)}
 
 /* ---------- CTA band ---------- */
 .ctaband{background:var(--hero-bg);padding:48px 0;text-align:center}
@@ -380,7 +400,7 @@ footer.site{
   padding:32px 0 44px;font-size:13px;color:var(--ink-3);
 }
 footer.site .wrap{display:flex;flex-direction:column;gap:12px}
-footer.site p{max-width:80ch}
+footer.site p{max-width:var(--measure)}
 footer.site .ack{color:var(--ink-2)}
 
 /* ---------- 404 ---------- */
