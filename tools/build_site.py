@@ -17,7 +17,7 @@ import re
 import sys
 
 SITE_NAME = "REMMMEDIES"
-TAGLINE = "NSF REU Site · CM4 · Auburn University"
+TAGLINE = "NSF REU Site · CM<sup>4</sup> · Auburn University"
 
 PAGES = [
     ("index.html",    "home",     "Home",              "REMMMEDIES REU at Auburn University",
@@ -25,7 +25,7 @@ PAGES = [
     ("program.html",  "program",  "The Program",       "The Program",
      "Ten weeks: a week-long boot camp in simulation methods, eight weeks of mentored research at two scales, and a closing research symposium."),
     ("research.html", "research", "Research Projects", "Research Projects",
-     "Eight active research projects in 2D materials, catalysis, quantum materials, dusty plasmas, molecular interactions and viral capsids."),
+     "Representative research projects in 2D materials, catalysis, quantum materials, dusty plasmas, molecular interactions and viral capsids."),
     ("mentors.html",  "mentors",  "Mentors",           "Mentors",
      "Faculty mentors from Physics, Chemistry, Materials Engineering, Chemical Engineering and Statistics at Auburn University."),
     ("apply.html",    "apply",    "Apply",             "Apply",
@@ -74,9 +74,9 @@ HEAD = """<!doctype html>
 FOOT = """</main>
 <footer class="site">
   <div class="wrap">
-    <p class="ack">This material is based upon work supported by the National Science Foundation under Award No. <span class="ph">[[AWARD NUMBER]]</span>. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
+    <p class="ack">This material is based upon work supported by the National Science Foundation under Award No. 2548283. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
     <p>Auburn University is an equal opportunity educational institution/employer.</p>
-    <p>Center for Multiscale Modeling of Materials and Molecules (CM4) · Auburn University · Auburn, AL 36849 · <span class="ph">[[PROGRAM EMAIL]]</span></p>
+    <p>Center for Multiscale Modeling of Materials and Molecules (CM<sup>4</sup>) · Auburn University · Auburn, AL 36849 · <span class="ph">[[PROGRAM EMAIL]]</span></p>
   </div>
 </footer>
 </body>
@@ -101,8 +101,8 @@ HOME = """
   <div class="hero-inner">
     <div>
       <p class="eyebrow">Summer research · Auburn University</p>
-      <h1>Model matter,<br>atom to bulk.</h1>
-      <p class="tag">A paid 10-week research experience in computational modeling of materials and molecules — for undergraduates who want to do this and don't have the chance at home.</p>
+      <h1>Model matter,<br>atom to bulk</h1>
+      <p class="tag">A paid 10-week research experience in computational modeling of materials and molecules — for undergraduates who want to do this and don't have the chance at home</p>
       <p class="factline">
         <span>May 17 &ndash; July 31, 2027</span>
         <span>$6,365 stipend</span>
@@ -117,19 +117,17 @@ HOME = """
     <figure class="heroart">
       <img src="assets/img/hero-lattice.jpg" width="1600" height="1200"
            alt="A rendered two-dimensional honeycomb lattice seen in perspective, with a circular nanopore at its centre whose rim atoms are chemically passivated.">
-      <figcaption>A functionalized nanopore in a 2D material — one of the structures students model here.</figcaption>
+      <figcaption>A functionalized nanopore in a 2D material — one of the structures students model here</figcaption>
     </figure>
   </div>
 </div>
 
 <section class="band paper">
   <div class="wrap stack">
-    <p class="eyebrow">The short version</p>
-    <h2 class="sec">Ten students. Ten weeks. Real computational research.</h2>
     <div class="narrow stack">
       <p>Every summer, ten undergraduates come to Auburn to spend ten weeks doing computational research — simulating how matter behaves, from single atoms to bulk materials.</p>
       <p>You will not be fetching coffee or reading papers in a corner. You will be running quantum chemistry calculations, molecular dynamics simulations, and machine-learning workflows on some of the largest computers in the Southeast, on a live research problem, with a faculty mentor and a graduate-student mentor who meet with you every week.</p>
-      <p>The program is hosted by the <strong>Center for Multiscale Modeling of Materials and Molecules (CM4)</strong> and brings together faculty from Physics, Chemistry and Biochemistry, Materials Engineering, Chemical Engineering, and Statistics.</p>
+      <p>The program is hosted by the <strong>Center for Multiscale Modeling of Materials and Molecules (CM<sup>4</sup>)</strong> and brings together faculty from Physics, Chemistry and Biochemistry, Materials Engineering, Chemical Engineering, and Statistics.</p>
     </div>
     <div class="callout warm narrow">
       <p><strong>We especially encourage applications from students at community colleges, primarily undergraduate institutions, and any school where research opportunities are hard to come by.</strong></p>
@@ -139,11 +137,10 @@ HOME = """
 
 <section class="band tint">
   <div class="wrap">
-    <div class="grid g4">
+    <div class="grid g3">
       <div class="stat"><span class="n">10</span><span class="l">weeks on the Auburn campus, May 17 &ndash; July 31, 2027</span></div>
       <div class="stat"><span class="n">$6,365</span><span class="l">stipend, plus housing, meals, and travel reimbursement</span></div>
-      <div class="stat"><span class="n">10</span><span class="l">students in the cohort, most from outside Auburn</span></div>
-      <div class="stat"><span class="n">8</span><span class="l">research projects across five departments</span></div>
+      <div class="stat"><span class="n">10</span><span class="l">students in the cohort</span></div>
     </div>
   </div>
 </section>
@@ -167,7 +164,7 @@ HOME = """
       </div>
       <div class="point">
         <h3>Your work doesn't stop in August</h3>
-        <p>The program closes with the CM4 research symposium. After that we support publication — in indexed journals or Auburn's undergraduate research journal — and fund travel for students presenting at conferences.</p>
+        <p>The program closes with the CM<sup>4</sup> research symposium. After that we support publication — in indexed journals or Auburn's undergraduate research journal — and fund travel for students presenting at conferences.</p>
       </div>
     </div>
   </div>
@@ -176,7 +173,7 @@ HOME = """
 <section class="ctaband">
   <div class="wrap stack">
     <h2>Applications for Summer 2027</h2>
-    <p>Open <span class="ph">[[APPLICATION OPENS]]</span> · Close <span class="ph">[[APPLICATION DEADLINE]]</span> · Apply through NSF ETAP</p>
+    <p>Open October 1, 2026 · Close February 7, 2027 · Apply through NSF ETAP</p>
     <p><a class="btn btn-primary" href="apply.html">Start your application</a></p>
   </div>
 </section>
@@ -197,10 +194,10 @@ PROGRAM = """
     <h2 class="sec">The boot camp</h2>
     <p class="lede">Before you touch a research problem, you get a working tour of the methods used to model matter at every scale. Each faculty mentor gives an introductory lecture and leads a half-day hands-on workshop on their technique — including what it can and cannot tell you.</p>
     <div class="grid g2">
-      <div class="proj"><p class="num">DAY 1</p><h3>Orientation and AI foundation models</h3><p class="d">Getting set up, meeting the cohort, and starting with foundation models trained on chemical and materials data (such as Meta FAIR's UMA) — exploring structure&ndash;property relationships and reaction energetics before the more rigorous methods.</p></div>
-      <div class="proj"><p class="num">DAY 2</p><h3>Electronic structure</h3><p class="d">Density functional theory and Hartree&ndash;Fock via the MIT Atomic-Scale Modeling Toolkit. How electrons determine structure, bonding, and reaction mechanisms.</p></div>
-      <div class="proj"><p class="num">DAY 3</p><h3>Molecular dynamics and Monte Carlo</h3><p class="d">Using the MIT Atomic-Scale Modeling Toolkit and NAMD to follow atoms through time, and to connect interatomic forces to ensemble-average properties.</p></div>
-      <div class="proj"><p class="num">DAY 4</p><h3>Finite element analysis</h3><p class="d">Using OOF2 to model how real materials and structures respond to stress, heat, and vibration at macroscopic scales.</p></div>
+      <div class="proj"><p class="num">DAY 1</p><h3>Orientation and AI foundation models</h3><p class="d">Getting set up, meeting the cohort, and starting with AI foundation models trained on chemical and materials data — exploring structure&ndash;property relationships and reaction energetics before the more rigorous methods.</p></div>
+      <div class="proj"><p class="num">DAY 2</p><h3>Electronic structure</h3><p class="d">Density functional theory and Hartree&ndash;Fock, worked through with instructional toolkits and materials prepared by our faculty. How electrons determine structure, bonding, and reaction mechanisms.</p></div>
+      <div class="proj"><p class="num">DAY 3</p><h3>Molecular dynamics and Monte Carlo</h3><p class="d">Following atoms and molecules through time, and connecting interatomic forces to ensemble-average properties, in hands-on simulations you run yourself.</p></div>
+      <div class="proj"><p class="num">DAY 4</p><h3>Finite element analysis</h3><p class="d">Modelling how real materials and structures respond to stress, heat, and vibration at macroscopic scales, where continuum methods take over from atoms.</p></div>
       <div class="proj"><p class="num">DAY 5</p><h3>Materials informatics</h3><p class="d">Jupyter notebooks, data science for materials and chemistry, and how data-driven insight can point quantum chemistry and molecular dynamics in new directions.</p></div>
       <div class="proj"><p class="num">ALL WEEK</p><h3>High-performance computing</h3><p class="d">Linux environments, moving data, submitting and monitoring jobs, parallel computing, and benchmarking on Auburn's Easley cluster and the Alabama Supercomputer Authority systems.</p></div>
     </div>
@@ -238,33 +235,6 @@ PROGRAM = """
 </section>
 
 <section class="band paper">
-  <div class="wrap stack">
-    <p class="eyebrow">Representative schedule</p>
-    <h2 class="sec">The ten weeks</h2>
-    <div class="tablewrap">
-      <table>
-        <caption class="visually-hidden">Week-by-week schedule of research, professional development and community activities</caption>
-        <thead><tr><th scope="col">Week</th><th scope="col">Research</th><th scope="col">Professional development</th><th scope="col">Community</th></tr></thead>
-        <tbody>
-          <tr><td class="wk">0</td><td>Pre-arrival materials from your mentor</td><td>Optional virtual Q&amp;A</td><td>&mdash;</td></tr>
-          <tr><td class="wk">1</td><td>Orientation; intro to coding; HPC</td><td>Code of conduct</td><td>Welcome</td></tr>
-          <tr><td class="wk">2</td><td>Job submission, parallel computing</td><td>Workshop</td><td>Cookout</td></tr>
-          <tr><td class="wk">3</td><td>Methods training</td><td>Workshop</td><td>&mdash;</td></tr>
-          <tr><td class="wk">4</td><td>Visualizing data; HPC facility visit</td><td>Workshop</td><td>Jule Collins Smith Museum</td></tr>
-          <tr><td class="wk">5</td><td>Coding tournament</td><td>Searching the literature</td><td>Chewacla State Park hike</td></tr>
-          <tr><td class="wk">6</td><td>Comparing methods across scales</td><td>Effective presentations</td><td>Star gazing</td></tr>
-          <tr><td class="wk">7</td><td>3-minute research story</td><td>Careers in STEM</td><td>&mdash;</td></tr>
-          <tr><td class="wk">8</td><td>Big data; HPC</td><td>Résumés and interviews</td><td>Movie night</td></tr>
-          <tr><td class="wk">9</td><td>Hackathon</td><td>Post-graduation round table</td><td>CM4 trivia night</td></tr>
-          <tr><td class="wk">10</td><td>REU symposium</td><td>&mdash;</td><td>Farewell</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="fineprint">Representative; exact activities vary year to year.</p>
-  </div>
-</section>
-
-<section class="band tint">
   <div class="wrap stack">
     <p class="eyebrow">Afterward</p>
     <h2 class="sec">Publish, present, stay in touch</h2>
@@ -329,25 +299,27 @@ def projects_page():
         <h3>{title}</h3>
         <p class="who">{who}</p>
         <p class="meth">{meth}</p>
-        <p class="d">{body}</p>
-        <p class="d"><strong>You will</strong> {doing}</p>
+        <details class="projdet">
+          <summary>Project details</summary>
+          <p class="d">{body}</p>
+          <p class="d"><strong>You will</strong> {doing}</p>
+        </details>
       </article>""")
     return """
 <section class="band paper">
   <div class="wrap stack">
     <p class="eyebrow">Research projects</p>
-    <h1 class="sec">Eight problems, each taken at two scales</h1>
-    <p class="lede">Every project below is an active research problem, tackled by a pair of students working at different scales with mentors from different departments. You do not need to have done any of this before — projects are scoped for students just starting in computational work as well as those with experience.</p>
-    <div class="callout"><p><strong>In your application, rank your top three.</strong> We match you on your preferences, your background, and the fit between your interests and each project's methods.</p></div>
+    <h1 class="sec">Every problem, taken at two scales</h1>
+    <p class="lede">The projects below are representative of the work our groups do. Each is an active research problem, tackled by a pair of students working at different scales with mentors from different departments. You do not need to have done any of this before — projects are scoped for students just starting in computational work as well as those with experience.</p>
   </div>
 </section>
 
 <section class="band tint">
   <div class="wrap">
-    <div class="grid g2">
+    <div class="grid g2 projgrid">
 """ + "\n".join(cards) + """
     </div>
-    <p class="fineprint">Project availability varies by year with mentor availability and the interests of the incoming cohort.</p>
+    <p class="fineprint">These are representative projects. The set offered in a given year depends on mentor availability and the interests of the incoming cohort, and the confirmed list is shared with admitted students during matching.</p>
   </div>
 </section>
 """
@@ -403,15 +375,15 @@ def mentors_page():
     <div class="grid g3">
       <div class="lead-card">
         <p class="nm">Dr. Marcelo A. Kuroda</p>
-        <p class="bi">Associate Professor of Physics. Theoretical and computational condensed matter and materials physics, from large-scale first-principles calculations to analytical models. Most Outstanding Professor, Society of Physics Students (2015).</p>
+        <p class="bi">Associate Professor of Physics. Theoretical and computational condensed matter and materials physics, from large-scale first-principles calculations to analytical models.</p>
       </div>
       <div class="lead-card">
         <p class="nm">Dr. Konstantin Klyukin</p>
-        <p class="bi">Assistant Professor of Materials Engineering. Connects ab initio simulation with machine learning to understand atomic-scale processes at materials interfaces. AU Outstanding Faculty Member 2024 for excellence in undergraduate teaching.</p>
+        <p class="bi">Assistant Professor of Materials Engineering. Connects ab initio simulation with machine learning to understand atomic-scale processes at materials interfaces.</p>
       </div>
       <div class="lead-card">
         <p class="nm">Dr. Evangelos Miliordos</p>
-        <p class="bi">J. E. Land Associate Professor, Chemistry and Biochemistry. Quantum chemical calculations on transition metal compounds and systems with solvated electrons.</p>
+        <p class="bi">Alumni Endowed Associate Professor, Chemistry and Biochemistry. Quantum chemical calculations on transition metal compounds and systems with solvated electrons (computational catalysis).</p>
       </div>
     </div>
   </div>
@@ -441,9 +413,9 @@ APPLY = """
     <p class="eyebrow">Apply</p>
     <h1 class="sec">Key dates</h1>
     <div class="kv">
-      <div><span class="k">Applications open</span><span class="v ph">[[APPLICATION OPENS]]</span></div>
-      <div><span class="k">Application deadline</span><span class="v ph">[[APPLICATION DEADLINE]]</span></div>
-      <div><span class="k">Decisions announced</span><span class="v ph">[[DECISION DATE]]</span></div>
+      <div><span class="k">Applications open</span><span class="v">October 1, 2026</span></div>
+      <div><span class="k">Application deadline</span><span class="v">February 7, 2027</span></div>
+      <div><span class="k">Decisions announced</span><span class="v">Mid-March 2027</span></div>
       <div><span class="k">Program dates</span><span class="v">May 17 &ndash; July 31, 2027</span></div>
     </div>
     <p><a class="btn btn-primary" href="[[ETAP LINK]]">Apply on NSF ETAP</a></p>
@@ -457,12 +429,13 @@ APPLY = """
     <ul class="tick">
       <li>You are a <strong>U.S. citizen, U.S. national, or permanent resident</strong>. This is an NSF requirement and we cannot make exceptions.</li>
       <li>You are <strong>enrolled in a degree program</strong> — full-time or part-time — leading to an associate's or bachelor's degree, when you apply and through the summer.</li>
-      <li>You will <strong>not graduate before the program ends</strong>. <span class="ph">[[GRAD YEAR CUTOFF]]</span> Students who already hold a bachelor's degree are not eligible.</li>
+      <li>You will <strong>not graduate before the program ends</strong>. You must not receive your bachelor&rsquo;s degree before August 2027. Students who already hold a bachelor's degree are not eligible.</li>
     </ul>
     <div class="callout narrow">
-      <p><strong>Programming experience is preferred but not required.</strong> Familiarity with Python, C++, or MATLAB helps, but we design projects for students just starting in computational work as well as those with experience. If you have never used a command line, you are still a plausible applicant — that is what Week 1 is for.</p>
+      <p><strong>All STEM majors are welcome, and coding experience is not required.</strong> It helps if you have some — but projects are tailored to your starting point, and the first week is a boot camp in the methods you will use: AI foundation models for materials, density functional theory, molecular dynamics, finite element analysis, and materials informatics in Python, plus working on a Linux cluster and running jobs on a supercomputer.</p>
+      <p class="d">If you have never opened a command line, you are still a plausible applicant. That is what Week 1 is for.</p>
     </div>
-    <p class="narrow">We also expect a <strong>minimum GPA of 3.0</strong> in a STEM major — physics, chemistry, materials science, chemical engineering, mathematics, statistics, computer science, or a related field.</p>
+    <p class="narrow">We also expect a <strong>minimum GPA of 3.0</strong>. Most applicants major in physics, chemistry, materials science, chemical engineering, mathematics, statistics or computer science, but any STEM field is eligible.</p>
   </div>
 </section>
 
@@ -476,7 +449,6 @@ APPLY = """
         <h3 class="sub">Primary criteria</h3>
         <ul class="clean">
           <li><strong>Academic performance</strong> — a strong record in relevant coursework.</li>
-          <li><strong>Computational skills</strong> — any familiarity with programming languages and tools, though not required.</li>
           <li><strong>Research interest</strong> — shown through coursework, prior experience, or extracurricular activities.</li>
           <li><strong>Communication</strong> — written and oral, as evidenced by essays, proposals, or past presentations.</li>
           <li><strong>Potential for success</strong> — intellectual curiosity, problem-solving, and willingness to learn.</li>
@@ -488,6 +460,7 @@ APPLY = """
           <li><strong>Your institution</strong> — we build the cohort from a wide range of schools. At least half of our participants come from institutions where research opportunities are limited.</li>
           <li><strong>Letters of recommendation</strong> — from faculty who can speak to your abilities and research potential.</li>
           <li><strong>Engagement in STEM</strong> — service, outreach, or student organizations.</li>
+          <li><strong>Computational skills</strong> — any prior programming or simulation experience. This helps us match you to a project; it carries no advantage in selection.</li>
         </ul>
       </div>
     </div>
@@ -499,10 +472,10 @@ APPLY = """
     <p class="eyebrow">Process</p>
     <h2 class="sec">How to apply</h2>
     <div class="grid g2">
-      <div class="proj"><p class="num">STEP 1</p><h3>Prepare your materials</h3><p class="d">Academic transcript (unofficial is fine), a personal statement, your top three project preferences, and one or two faculty letters of recommendation.</p></div>
-      <div class="proj"><p class="num">STEP 2</p><h3>Submit through NSF ETAP</h3><p class="d">All applications go through the NSF Education and Training Application. Create an account, find our program, and complete the application there. Do not email materials to us directly.</p></div>
+      <div class="proj"><p class="num">STEP 1</p><h3>Prepare your materials</h3><p class="d">Academic transcript (unofficial is fine), a personal statement, and one or two faculty letters of recommendation.</p></div>
+      <div class="proj"><p class="num">STEP 2</p><h3>Submit through NSF ETAP</h3><p class="d">All applications go through the NSF Education and Training Application. Create an account, find our program, and complete the application there. Please note that we do not accept materials sent to us directly by email.</p></div>
       <div class="proj"><p class="num">STEP 3</p><h3>Ask your recommenders early</h3><p class="d">Letters are submitted through ETAP. Give your faculty at least three weeks' notice.</p></div>
-      <div class="proj"><p class="num">STEP 4</p><h3>Come to a Q&amp;A</h3><p class="d">We run virtual information sessions during the application window (<span class="ph">[[WEBINAR DATES]]</span>). Bring any question. No preparation needed.</p></div>
+      <div class="proj"><p class="num">STEP 4</p><h3>Come to a Q&amp;A</h3><p class="d">Admitted students are invited to a virtual Q&amp;A in early May 2027, before the program begins &mdash; a chance to meet the cohort and ask anything before you arrive. No preparation needed.</p></div>
     </div>
   </div>
 </section>
@@ -557,7 +530,7 @@ LIFE = """
       </ul>
       <ul class="clean">
         <li><strong>Star gazing</strong> with the telescopes in the Department of Physics</li>
-        <li><strong>CM4 Trivia Night</strong> — famous scientists, breakthroughs in materials, and guessing materials from their properties</li>
+        <li><strong>CM<sup>4</sup> Trivia Night</strong> — famous scientists, breakthroughs in materials, and guessing materials from their properties</li>
         <li><strong>Movie night</strong>, plus trips introducing you to the culture, history, and geography of Alabama</li>
       </ul>
     </div>
@@ -604,8 +577,6 @@ FAQS = [
      "No. On-campus housing and board are provided for the full ten weeks, and travel to and from Auburn is reimbursed. The $6,365 stipend is yours."),
     ("Can I take a class or work another job during the program?",
      "The program is a full-time commitment. Please plan not to enroll in summer coursework or hold another job during the ten weeks."),
-    ("How are students matched to projects?",
-     "You rank your top three projects in your application. The selection committee weighs your preferences alongside your background and motivation to find a strong fit with each project's research question and methods."),
     ("Who will I actually work with day to day?",
      "Your faculty mentor, whom you meet with at least weekly; a graduate student in their group as your near-peer mentor; and your project partner, the other REU student working on the same problem at a different scale."),
     ("Will I get to publish or present my work?",
@@ -651,16 +622,16 @@ CONTACT = """
         </div>
         <div>
           <p class="eyebrow">Mailing address</p>
-          <p class="addr">Center for Multiscale Modeling of Materials and Molecules (CM4)<br>Auburn University<br>Auburn, AL 36849</p>
+          <p class="addr">Center for Multiscale Modeling of Materials and Molecules (CM<sup>4</sup>)<br>Auburn University<br>Auburn, AL 36849</p>
         </div>
       </div>
       <div class="stack">
         <p class="eyebrow">Program leadership</p>
         <div class="peoplecol">
-          <div class="person"><span class="avatar" aria-hidden="true">MK</span><span class="pbody"><span class="nm">Dr. Marcelo A. Kuroda</span><span class="rl">Principal Investigator · Physics</span></span></div>
-          <div class="person"><span class="avatar" aria-hidden="true">KK</span><span class="pbody"><span class="nm">Dr. Konstantin Klyukin</span><span class="rl">Co-Principal Investigator · Materials Engineering</span></span></div>
-          <div class="person"><span class="avatar" aria-hidden="true">EM</span><span class="pbody"><span class="nm">Dr. Evangelos Miliordos</span><span class="rl">Senior Investigator · Chemistry and Biochemistry</span></span></div>
-          <div class="person"><span class="avatar" aria-hidden="true">&mdash;</span><span class="pbody"><span class="nm ph">[[COORDINATOR NAME]]</span><span class="rl">Project coordinator</span></span></div>
+          <div class="person"><span class="avatar" aria-hidden="true">MK</span><span class="pbody"><span class="nm">Dr. Marcelo A. Kuroda</span><span class="rl">Physics</span></span></div>
+          <div class="person"><span class="avatar" aria-hidden="true">KK</span><span class="pbody"><span class="nm">Dr. Konstantin Klyukin</span><span class="rl">Materials Engineering</span></span></div>
+          <div class="person"><span class="avatar" aria-hidden="true">EM</span><span class="pbody"><span class="nm">Dr. Evangelos Miliordos</span><span class="rl">Chemistry and Biochemistry</span></span></div>
+          <div class="person"><span class="avatar" aria-hidden="true">KB</span><span class="pbody"><span class="nm">Katie Brown</span><span class="rl">Project coordinator &middot; <a href="mailto:ksn0006@auburn.edu">ksn0006@auburn.edu</a></span></span></div>
         </div>
       </div>
     </div>
@@ -671,7 +642,7 @@ CONTACT = """
   <div class="wrap stack narrow">
     <p class="eyebrow">Information sessions</p>
     <h2 class="sec">Virtual Q&amp;A</h2>
-    <p>We hold Zoom sessions during the application window: <span class="ph">[[WEBINAR DATES]]</span>. Bring any question — about the projects, the application, funding, or what living in Auburn is like.</p>
+    <p>We hold a Zoom session for admitted students in early May 2027, before the program begins. Bring any question — about the projects, funding, or what living in Auburn is like. Prospective applicants are welcome to email us at any point during the application window.</p>
   </div>
 </section>
 
