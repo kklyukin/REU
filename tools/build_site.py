@@ -21,7 +21,7 @@ TAGLINE = "NSF REU Site · CM<sup>4</sup> · Auburn University"
 
 PAGES = [
     ("index.html",    "home",     "Home",              "REMMMEDIES REU at Auburn University",
-     "A paid 10-week NSF REU in computational modeling of materials and molecules at Auburn University. $6,365 stipend, housing, meals and travel. No programming experience required."),
+     "A paid 10-week NSF REU in computational modeling of materials and molecules at Auburn University. $6,365 stipend, on-campus housing and travel reimbursement. No programming experience required."),
     ("program.html",  "program",  "The Program",       "The Program",
      "Ten weeks: a week-long boot camp in simulation methods, eight weeks of mentored research at two scales, and a closing research symposium."),
     ("research.html", "research", "Research Projects", "Research Projects",
@@ -31,7 +31,7 @@ PAGES = [
     ("apply.html",    "apply",    "Apply",             "Apply",
      "Eligibility, selection criteria, key dates and how to apply through NSF ETAP."),
     ("life.html",     "life",     "Life at Auburn",    "Life at Auburn",
-     "Stipend, housing, meals, travel, computing resources and community life during the ten weeks."),
+     "Stipend, housing, travel, computing resources and community life during the ten weeks."),
     ("faq.html",      "faq",      "FAQ",               "Frequently Asked Questions",
      "Answers to the questions we get most often about eligibility, experience required, matching, and the summer itself."),
     ("contact.html",  "contact",  "Contact",           "Contact",
@@ -104,9 +104,9 @@ HOME = """
       <h1>Model matter,<br>atom to bulk</h1>
       <p class="tag">A paid 10-week research experience in computational modeling of materials and molecules — for undergraduates who want to do this and don't have the chance at home</p>
       <p class="factline">
-        <span>May 17 &ndash; July 31, 2027</span>
+        <span>May 17 &ndash; July 23, 2027</span>
         <span>$6,365 stipend</span>
-        <span>Housing + meals + travel</span>
+        <span>Housing + travel</span>
         <span>No programming experience required</span>
       </p>
       <p class="cta-row">
@@ -138,8 +138,8 @@ HOME = """
 <section class="band tint">
   <div class="wrap">
     <div class="grid g3">
-      <div class="stat"><span class="n">10</span><span class="l">weeks on the Auburn campus, May 17 &ndash; July 31, 2027</span></div>
-      <div class="stat"><span class="n">$6,365</span><span class="l">stipend, plus housing, meals, and travel reimbursement</span></div>
+      <div class="stat"><span class="n">10</span><span class="l">weeks on the Auburn campus, May 17 &ndash; July 23, 2027</span></div>
+      <div class="stat"><span class="n">$6,365</span><span class="l">stipend, plus on-campus housing and travel reimbursement</span></div>
       <div class="stat"><span class="n">10</span><span class="l">students in the cohort</span></div>
     </div>
   </div>
@@ -383,7 +383,7 @@ def mentors_page():
       </div>
       <div class="lead-card">
         <p class="nm">Dr. Evangelos Miliordos</p>
-        <p class="bi">Alumni Endowed Associate Professor, Chemistry and Biochemistry. Quantum chemical calculations on transition metal compounds and systems with solvated electrons (computational catalysis).</p>
+        <p class="bi">Alumni Endowed Associate Professor, Chemistry and Biochemistry. Quantum chemistry, computational catalysis, electrides, quantum computing.</p>
       </div>
     </div>
   </div>
@@ -416,7 +416,7 @@ APPLY = """
       <div><span class="k">Applications open</span><span class="v">October 1, 2026</span></div>
       <div><span class="k">Application deadline</span><span class="v">February 7, 2027</span></div>
       <div><span class="k">Decisions announced</span><span class="v">Mid-March 2027</span></div>
-      <div><span class="k">Program dates</span><span class="v">May 17 &ndash; July 31, 2027</span></div>
+      <div><span class="k">Program dates</span><span class="v">May 17 &ndash; July 23, 2027</span></div>
     </div>
     <p><a class="btn btn-primary" href="[[ETAP LINK]]">Apply on NSF ETAP</a></p>
   </div>
@@ -486,7 +486,7 @@ APPLY = """
     <h2 class="sec">Advice on your personal statement</h2>
     <ul class="clean">
       <li><strong>Be specific about the projects.</strong> &ldquo;I am interested in materials science&rdquo; tells us less than a paragraph on why selective etching of layered phases caught your attention.</li>
-      <li><strong>Inexperience is not a disqualifier — and pretending isn't necessary.</strong> We are looking for students who want to learn computational methods, not students who already have.</li>
+      <li><strong>You don't need to oversell your experience.</strong> We would rather read an honest account of what you've done and what you want to learn than a padded list of tools you've touched once.</li>
       <li><strong>Tell us what research access looks like at your school.</strong> If your institution has no research groups in this area, say so. That is context we actively want.</li>
       <li><strong>Have someone read it.</strong> Your writing center, an advisor, a friend in another major.</li>
     </ul>
@@ -509,10 +509,10 @@ LIFE = """
     <div class="grid g3">
       <div class="point"><h3>Stipend</h3><p>$6,365 for the ten-week program.</p></div>
       <div class="point"><h3>Housing</h3><p>On-campus for the full ten weeks — suite-style (two rooms joined by a bathroom) or apartment-style (four bedrooms, a common area with a full kitchen, two bathrooms), with access to the student activity center, library, and computing facilities.</p></div>
-      <div class="point"><h3>Meals</h3><p>Board is provided for the entire program.</p></div>
       <div class="point"><h3>Travel</h3><p>Travel to and from Auburn — airfare, shuttle bus, and similar — is reimbursed.</p></div>
       <div class="point"><h3>Workspace</h3><p>You are based in your mentor's home department and provided with a laptop for your work and for access to the HPC systems.</p></div>
       <div class="point"><h3>The town</h3><p>Auburn is a college town of about 80,000 in east Alabama, about two hours from Atlanta. Summers are hot; the campus is green and walkable.</p></div>
+      <div class="point"><h3>Presenting your work</h3><p>Partial funding to present at a regional or national conference after the program ends, with your mentor.</p></div>
     </div>
   </div>
 </section>
@@ -573,8 +573,8 @@ FAQS = [
      "Yes, emphatically. Students from community colleges and other institutions where research is hard to access are exactly who this program was built for, and we aim for at least half of each cohort to come from such institutions."),
     ("Can I do this remotely, or for part of the summer?",
      "No. The program is in person in Auburn for the full ten weeks. Being physically present with your partner, your mentors, and the cohort is central to how the program works."),
-    ("Do I have to pay for housing or food?",
-     "No. On-campus housing and board are provided for the full ten weeks, and travel to and from Auburn is reimbursed. The $6,365 stipend is yours."),
+    ("What is covered, and what is not?",
+     "On-campus housing is provided for the full ten weeks, and travel to and from Auburn is reimbursed. Meals are not included \u2014 you cover your own food out of the $6,365 stipend."),
     ("Can I take a class or work another job during the program?",
      "The program is a full-time commitment. Please plan not to enroll in summer coursework or hold another job during the ten weeks."),
     ("Who will I actually work with day to day?",
