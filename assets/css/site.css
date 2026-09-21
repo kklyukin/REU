@@ -93,6 +93,11 @@ sup{font-size:.72em;line-height:0;vertical-align:.42em}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .stack{display:flex;flex-direction:column;gap:18px}
 .narrow{max-width:var(--measure)}
+/* .narrow applied to the container itself would shrink .wrap and centre the
+   whole section, pushing it inward from every other section's left edge.
+   Keep the container full width and constrain its children instead. */
+.wrap.narrow{max-width:var(--maxw)}
+.wrap.narrow > *{max-width:var(--measure)}
 .grid{display:grid;gap:18px}
 .g2{grid-template-columns:1fr}
 .g3{grid-template-columns:1fr}
