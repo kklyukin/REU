@@ -137,17 +137,17 @@ HOME = """
 
 <section class="band tint">
   <div class="wrap">
-    <div class="grid g3">
+    <div class="grid g4">
       <div class="stat"><span class="n">10</span><span class="l">weeks on the Auburn campus, May 17 &ndash; July 23, 2027</span></div>
       <div class="stat"><span class="n">$6,365</span><span class="l">stipend, plus on-campus housing and travel reimbursement</span></div>
       <div class="stat"><span class="n">10</span><span class="l">students in the cohort</span></div>
+      <div class="stat"><span class="n">2</span><span class="l">mentors per participant &mdash; one faculty, one graduate student</span></div>
     </div>
   </div>
 </section>
 
 <section class="band paper">
   <div class="wrap stack">
-    <p class="eyebrow">Why this one</p>
     <h2 class="sec">What makes this REU different</h2>
     <div class="grid g2">
       <div class="point">
