@@ -1,10 +1,10 @@
 # Placeholders still to fill in
 
-Already filled: program dates (May 17 – July 31, 2027), cohort year, application
+Already filled: program dates (May 17 – July 23, 2027), cohort year, application
 opens/deadline, decision date, graduation cutoff, NSF award number (2548283),
-project coordinator, and the pre-program Q&A date.
+project coordinator, the information-session date, and its Qualtrics sign-up link.
 
-Two remain. Find them with:
+One remains. Find it with:
 
 ```bash
 grep -rn --include='*.html' -E '\[\[[A-Z ]+\]\]' .
@@ -13,9 +13,10 @@ grep -rn --include='*.html' -E '\[\[[A-Z ]+\]\]' .
 | Token | Appears in | What to put there |
 |---|---|---|
 | `[[ETAP LINK]]` | `apply.html` | The program's ETAP opportunity URL. **This one is an `href`** — replace the whole attribute value, not just the visible text. |
-| `[[PROGRAM EMAIL]]` | every page (footer) + `contact.html`, `faq.html` | A shared alias such as `remmmedies@auburn.edu`. Use a shared mailbox, not a personal address — this outlives any one person's role. |
 
-Both render in an orange dashed box on the page, so they cannot go live unnoticed.
+It renders in an orange dashed box on the page, so it cannot go live unnoticed.
+
+Contact addresses are listed on the Contact page rather than in a single program alias.
 
 ## Making the check a hard failure
 
